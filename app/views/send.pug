@@ -1,0 +1,14 @@
+extends template
+
+block cssSheets
+	link(rel='stylesheet', href='/stylesheets/login.css')
+
+block content
+	script(src='/js/script.js')
+	.outerBox
+	form.send-form#send-form
+		.inputs
+			.input-row
+				input.target-input(type='text' value='Target')
+				input.value-input(type='number' value='0')
+				button.submit-button(type='button' onclick='send()') Send				

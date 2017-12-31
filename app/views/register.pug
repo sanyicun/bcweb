@@ -1,0 +1,28 @@
+extends template
+
+block cssSheets
+    link(rel='stylesheet', href='/stylesheets/register.css')
+
+block content
+    script(src='/js/script.js')
+    .outerBox
+    form.register-form#register-form
+        .heading
+            h1
+                div Register
+        .inputs
+            .input-row
+                .input_box
+                    input.text-input-half(type='text' name='firstname' placeholder='First Name')
+                    input.text-input-half(type='text' name='lastname' placeholder='Last Name')
+                .input-box
+                    input.text-input(type='text' name='email' placeholder='firstlast@mail.com')
+                .input-box
+                    input.text-input(type='password' name='password' placeholder='Password' maxLength='40')
+                .input-box
+                    input.text-input(type='password' name='verify' placeholder='Verify Password' maxLength='40')
+                .input-box
+                    input.text-input(type='phone' name='phone' placeholder='Enter Phone Number' maxLength='40')
+                a(href='/login')
+                    p.forgot Return to Login
+                button.login-button(type='button' onclick='register()') Register

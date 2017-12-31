@@ -1,0 +1,27 @@
+extends template
+
+
+
+block cssSheets
+    script(src='/js/script.js')
+    link(rel='stylesheet', href='/stylesheets/wallet.css')
+    script.
+        window.onload = function() {
+            generateTransactions();
+        }    
+
+
+block content
+    script(src='/js/script.js')
+    
+
+    .navBar
+        a(href='/wallet')
+            img(src="images/pintu.png" class="pintuLogo").logo
+        a(href='/login')
+            button.logout-button(type='button' onclick='logout()') Logout
+        a(href='/transactions')
+            button.logout-button(type='button' onclick='logout()') Transactions
+
+    form.wallet-form#wallet-form
+        #listOfTransactions

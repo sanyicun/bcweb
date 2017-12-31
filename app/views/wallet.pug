@@ -1,0 +1,86 @@
+extends template
+
+
+block cssSheets
+    script(src='/js/script.js')
+    link(rel='stylesheet', href='/stylesheets/wallet.css')
+    script.
+        window.onload = function() {
+            generateWallets();
+        }    
+
+
+block content
+    script(src='/js/script.js')
+    
+
+    .navBar
+        a(href='/wallet')
+            img(src="images/pintu.png" class="pintuLogo").logo
+        a(href='/login')
+            button.logout-button(type='button' onclick='logout()') Logout
+        a(href='/transactions')
+            button.logout-button(type='button' onclick='logout()') Transactions
+
+    form.wallet-form#wallet-form
+        #listOfWallets
+
+        #send.modal
+            form.send-form#send-form
+                h1 Send Bitcoins
+                .inputs
+                    .input-row
+                        input.text-input#target-address(type='text' placeholder='Target')
+                    .input-row
+                        input.text-input#send-amount(type='number' placeholder='0')
+                    .input-row
+                        button.submit-button-send#send-button(type='button' onclick='send()') Send
+                        button.close-button-send(type='button' onclick='closeSendModal()') Close
+        #receive.modal
+            form.send-form#receive-form
+                h1 Receive Bitcoins
+                .input-row
+                    p#walletAddressYes
+                .input-row
+                    .divButton.close-button-receive(type='button' onclick='closeReceiveModal(this)') Close
+
+        #successSend.modal
+            form.send-form#receive-form
+                h1 Bitcoins successfully sent!
+                .input-row
+                    .divButton.close-button-sendSuccess(type='button' onclick='closeSuccessModal()') Close
+
+        #failSend.modal
+            form.send-form#receive-form
+                p Insufficient Funds. Transaction Failed.
+                .input-row
+                    .divButton.close-button-sendFail(type='button' onclick='closeFailModal()') Close
+
+    script.
+      function send() {
+          walletId = localStorage.currAddress
+          let target = document.getElementById('target-address').value
+          let amount = document.getElementById('send-amount').value
+        sendTransaction(walletId, target, amount)
+      }
+      function closeSendModal() {
+        document.getElementById('send').style.display = 'none'
+      }
+
+      function displaySendModal(address) {
+        localStorage.currAddress = address
+        document.getElementById('send').style.display = 'block'
+      }
+      function closeReceiveModal() {
+        document.getElementById("receive").style.display = 'none'
+      }
+      function closeSuccessModal() {
+        document.getElementById("successSend").style.display = 'none'
+      }
+      function closeFailModal() {
+        document.getElementById("failSend").style.display = 'none'
+      }
+      function displayReceiveModal(address) {
+        document.getElementById("receive").style.display = 'block'
+        document.getElementById("walletAddressYes").innerHTML = "Address: " + address
+      }
