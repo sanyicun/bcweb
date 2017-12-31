@@ -1,5 +1,5 @@
-# btc-wallet
-Frontend for BTC Wallet Project
+#bcweb-for wallet 
+Frontend for btc Wallet Project
 
 1. `npm install`
 2. `npm run dev`
