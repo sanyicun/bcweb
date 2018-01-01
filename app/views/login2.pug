@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    Welcome to GameX, have fun !
+    meta(name='description', content='这是一个 index 页面')
+    meta(name='keywords', content='index')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='renderer', content='webkit')
+    meta(http-equiv='Cache-Control', content='no-siteapp')
+    link(rel='icon', type='image/png', href='i/favicon.png')
+    link(rel='apple-touch-icon-precomposed', href='i/app-icon72x72@2x.png')
+    meta(name='apple-mobile-web-app-title', content='GameX')
+    link(rel='stylesheet', href='stylesheet/amazeui.min.css')
+    link(rel='stylesheet', href='stylesheet/admin.css')
+    link(rel='stylesheet', href='stylesheet/app.css')
+  body(data-type='login')
+    .am-g.myapp-login
+      .myapp-login-logo-block.tpl-login-max
+        .myapp-login-logo-text
+          .myapp-login-logo-text
+            | GameX
+            span  Login
+            i.am-icon-skyatlas
+        .login-font
+          i Log In 
+          |  or 
+          span  Sign Up
+        .am-u-sm-10.login-am-center
+          form.am-form
+            fieldset
+              .am-form-group
+                input#doc-ipt-email-1(type='email', placeholder='输入电子邮件')
+              .am-form-group
+                input#doc-ipt-pwd-1(type='password', placeholder='设置个密码吧')
+              p
+                button.am-btn.am-btn-default(type='submit'，onclick='login()') 登录
+
+    script(src='js/jquery.min.js')
+    script(src='js/amazeui.min.js')
+    script(src='js/app.js')
+
