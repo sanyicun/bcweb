@@ -5,7 +5,7 @@ const config = require('../app/models/config');
 const request = require('request');
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'BTC Wallet' });
+  res.render('login2', { title: 'BTC Wallet' });
 });
 
 //Logging in
@@ -17,7 +17,7 @@ router.post('/login', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-	res.render('login2', {title: 'Login'});
+	res.render('login', {title: 'Login'});
 });
 
 
