@@ -27,10 +27,12 @@ router.get('/wallet', function(req, res, next) {
 });
 
 //add Test page
-router.get('/test', function(req, res, next) {
+router.get('/gamelist', function(req, res, next) {
   res.render('gamelist', {title: 'Test'});
 });
-
+router.get('/homepage', function(req, res, next) {
+  res.render('homepage', {title: 'Homepage'});
+});
 
 //Getting Transactions page
 router.get('/transactions', function(req, res, next) {
