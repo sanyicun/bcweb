@@ -6,7 +6,7 @@ function login(){
 	    email: form.username.value ,
 	    password: form.password.value
   	};
-
+    console.log('xxxx');
   	console.log(data);
 
 	//Pass info to route and get token
@@ -23,6 +23,7 @@ function login(){
     	} 
     	else
     	{
+        console.log('login success');
 			return res.json().then(function(result) {
           setCookie('token', result.token, 2);
           location.href = "/wallet";
