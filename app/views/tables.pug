@@ -1,0 +1,517 @@
+extends templ
+
+block content
+    
+    .tpl-page-container.tpl-page-header-fixed
+      .tpl-left-nav.tpl-left-nav-hover
+       
+        .tpl-portlet-components
+          .portlet-title
+            .caption.font-green.bold
+              span.am-icon-code
+              |  列表
+            .tpl-portlet-input.tpl-fz-ml
+              .portlet-input.input-small.input-inline
+                .input-icon.right
+                  i.am-icon-search
+                  input.form-control.form-control-solid(type='text', placeholder='搜索...')
+          .tpl-block
+            .am-g
+              .am-u-sm-12.am-u-md-6
+                .am-btn-toolbar
+                  .am-btn-group.am-btn-group-xs
+                    button.am-btn.am-btn-default.am-btn-success(type='button')
+                      span.am-icon-plus
+                      |  新增
+                    button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                      span.am-icon-save
+                      |  保存
+                    button.am-btn.am-btn-default.am-btn-warning(type='button')
+                      span.am-icon-archive
+                      |  审核
+                    button.am-btn.am-btn-default.am-btn-danger(type='button')
+                      span.am-icon-trash-o
+                      |  删除
+              .am-u-sm-12.am-u-md-3
+                .am-form-group
+                  select(data-am-selected="{btnSize: 'sm'}")
+                    option(value='option1') 所有类别
+                    option(value='option2') IT业界
+                    option(value='option3') 数码产品
+                    option(value='option3') 笔记本电脑
+                    option(value='option3') 平板电脑
+                    option(value='option3') 只能手机
+                    option(value='option3') 超极本
+              .am-u-sm-12.am-u-md-3
+                .am-input-group.am-input-group-sm
+                  input.am-form-field(type='text')
+                  span.am-input-group-btn
+                    button.am-btn.am-btn-default.am-btn-success.tpl-am-btn-success.am-icon-search(type='button')
+            .am-g
+              .tpl-table-images
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-sm-12.am-u-md-6.am-u-lg-4
+                  .tpl-table-images-content
+                    .tpl-table-images-content-i-time 发布时间：2016-09-12
+                    .tpl-i-title
+                      | “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    a.tpl-table-images-content-i(href='javascript:;')
+                      .tpl-table-images-content-i-info
+                        span.ico
+                          img(src='assets/img/user02.png', alt='')
+                          | 追逐
+                      span.tpl-table-images-content-i-shadow
+                      img(src='assets/img/a1.png', alt='')
+                    .tpl-table-images-content-block
+                      .tpl-i-font
+                        | 你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片。
+                      .tpl-i-more
+                        ul
+                          li
+                            span.am-icon-qq.am-text-warning  100+
+                          li
+                            span.am-icon-weixin.am-text-success  235+
+                          li
+                            span.am-icon-github.font-green  600+
+                      .am-btn-toolbar
+                        .am-btn-group.am-btn-group-xs.tpl-edit-content-btn
+                          button.am-btn.am-btn-default.am-btn-success(type='button')
+                            span.am-icon-plus
+                            |  新增
+                          button.am-btn.am-btn-default.am-btn-secondary(type='button')
+                            span.am-icon-edit
+                            |  编辑
+                          button.am-btn.am-btn-default.am-btn-warning(type='button')
+                            span.am-icon-archive
+                            |  审核
+                          button.am-btn.am-btn-default.am-btn-danger(type='button')
+                            span.am-icon-trash-o
+                            |  删除
+                .am-u-lg-12
+                  .am-cf
+                    .am-fr
+                      ul.am-pagination.tpl-pagination
+                        li.am-disabled
+                          a(href='#') «
+                        li.am-active
+                          a(href='#') 1
+                        li
+                          a(href='#') 2
+                        li
+                          a(href='#') 3
+                        li
+                          a(href='#') 4
+                        li
+                          a(href='#') 5
+                        li
+                          a(href='#') »
+                  hr
+          .tpl-alert
+   
+

@@ -34,6 +34,14 @@ router.get('/homepage', function(req, res, next) {
   res.render('homepage', {title: 'Homepage'});
 });
 
+router.get('/tables', function(req, res, next) {
+  res.render('tables', {title: 'Homepage'});
+});
+
+router.get('/table:tableid', function(req, res, next) {
+  res.render('table', {title: 'Homepage'});
+});
+
 //Getting Transactions page
 router.get('/transactions', function(req, res, next) {
   res.render('transactions', {title: 'Transactions'});

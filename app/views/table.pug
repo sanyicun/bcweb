@@ -1,0 +1,117 @@
+extends templ
+
+block content
+    .tpl-page-container.tpl-page-header-fixed
+      
+      .tpl-content-wrapper
+        .row
+          .am-u-lg-3.am-u-md-6.am-u-sm-12
+            .dashboard-stat.blue
+              .visual
+                i.am-icon-comments-o
+              .details
+                .number  新手区
+                .desc  底池0.0001（比特币）
+              a.more(href='#')
+                | 快速加入
+                i.m-icon-swapright.m-icon-white
+          .am-u-lg-3.am-u-md-6.am-u-sm-12
+            .dashboard-stat.red
+              .visual
+                i.am-icon-bar-chart-o
+              .details
+                .number  中级区
+                .desc  底池0.001（比特币）
+              a.more(href='#')
+                | 快速加入
+                i.m-icon-swapright.m-icon-white
+          .am-u-lg-3.am-u-md-6.am-u-sm-12
+            .dashboard-stat.green
+              .visual
+                i.am-icon-apple
+              .details
+                .number  高级区 
+                .desc  底池0.01（比特币） 
+              a.more(href='#')
+                | 快速加入
+                i.m-icon-swapright.m-icon-white
+          .am-u-lg-3.am-u-md-6.am-u-sm-12
+            .dashboard-stat.purple
+              .visual
+                i.am-icon-android
+              .details
+                .number  VIP区 
+                .desc  底池0.1（比特币） 
+              a.more(href='#')
+                | 快速加入
+                i.m-icon-swapright.m-icon-white
+        .row
+          .am-u-md-12.am-u-sm-12.row-mb
+            .tpl-portlet
+              .tpl-portlet-title
+                .tpl-caption.font-red
+                  i.am-icon-bar-chart
+                  span  Hot热门游戏桌
+                .actions
+                  ul.actions-btn
+                    li.purple-on 昨天
+                    li.green 前天
+                    li.dark 本周
+              .tpl-scrollable
+                .number-stats
+                  .stat-number.am-fl.am-u-md-6
+                    .title.am-text-right  Total 
+                    .number.am-text-right.am-text-warning  2460 
+                  .stat-number.am-fr.am-u-md-6
+                    .title  Total 
+                    .number.am-text-success  2460 
+                table.am-table.tpl-table
+                  thead
+                    tr.tpl-table-uppercase
+                      th 用户
+                      th 账户
+                      th 次数
+                      th 胜率
+                  tbody
+                    tr
+                      td
+                        img.user-pic(src='images/user01.png', alt='')
+                        a.user-name(href='###') 禁言小张
+                      td ￥3213
+                      td 65
+                      td.font-green.bold 26%
+                    tr
+                      td
+                        img.user-pic(src='images/user02.png', alt='')
+                        a.user-name(href='###') Alex.
+                      td ￥2635
+                      td 52
+                      td.font-green.bold 32%
+                    tr
+                      td
+                        img.user-pic(src='images/user03.png', alt='')
+                        a.user-name(href='###') Tinker404
+                      td ￥1267
+                      td 65
+                      td.font-green.bold 51%
+                    tr
+                      td
+                        img.user-pic(src='images/user04.png', alt='')
+                        a.user-name(href='###') Arron.y
+                      td ￥657
+                      td 65
+                      td.font-green.bold 73%
+                    tr
+                      td
+                        img.user-pic(src='images/user05.png', alt='')
+                        a.user-name(href='###') Yves
+                      td ￥3907
+                      td 65
+                      td.font-green.bold 12%
+                    tr
+                      td
+                        img.user-pic(src='images/user06.png', alt='')
+                        a.user-name(href='###') 小黄鸡
+                      td ￥900
+                      td 65
+                      td.font-green.bold 10%
