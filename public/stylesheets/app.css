@@ -1516,7 +1516,7 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 }
 
 .tpl-table-images-content-i-shadow {
-    background: url(images/lbbg.png) bottom repeat-x;
+    background: url(../images/lbbg.png) bottom repeat-x;
     position: absolute;
     left: 0;
     right: 0;
