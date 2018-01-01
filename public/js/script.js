@@ -1,4 +1,4 @@
-function loginx(){
+function login(){
 	//Get info from forms
 	var form = document.getElementById('login-form');
 
