@@ -28,7 +28,7 @@ router.get('/wallet', function(req, res, next) {
 
 //add Test page
 router.get('/test', function(req, res, next) {
-  res.render('game-list', {title: 'Test'});
+  res.render('gamelist', {title: 'Test'});
 });
 
 
