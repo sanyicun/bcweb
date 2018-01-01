@@ -26,6 +26,12 @@ router.get('/wallet', function(req, res, next) {
   res.render('wallet', {title: 'Wallets'});
 });
 
+//add Test page
+router.get('/test', function(req, res, next) {
+  res.render('test', {title: 'Test'});
+});
+
+
 //Getting Transactions page
 router.get('/transactions', function(req, res, next) {
   res.render('transactions', {title: 'Transactions'});
