@@ -6,9 +6,8 @@ function login(){
 	    email: form.username.value ,
 	    password: form.password.value
   	};
-    alert(form);
-    alert(data);
-    console.log('xxxx');
+    alert(form.username.value);
+    alert(form.password.value);
   	console.log(data);
 
 	//Pass info to route and get token
