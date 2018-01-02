@@ -6,6 +6,7 @@ function login(){
 	    email: form.username.value ,
 	    password: form.password.value
   	};
+    alert('xxx');
     console.log('xxxx');
   	console.log(data);
 
@@ -23,6 +24,7 @@ function login(){
     	} 
     	else
     	{
+         alert('login success');
         console.log('login success');
 			return res.json().then(function(result) {
           setCookie('token', result.token, 2);
