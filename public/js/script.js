@@ -1,6 +1,6 @@
 function login(){
 	//Get info from forms
-	var form = document.getElementById('login-form');
+	var form = document.getElementById('login2-form');
 
 	var data = {
 	    email: form.username.value ,
