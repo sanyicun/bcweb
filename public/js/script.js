@@ -21,6 +21,7 @@ function login(){
   	}).then(function(res) {
     	if (!res.ok) {
     		console.log('error1');
+        alert('err1');
     	} 
     	else
     	{
@@ -33,6 +34,7 @@ function login(){
 
     	}
   	}).catch(function(err){
+      alert(err);
     	console.log(err);
   	});
 }
