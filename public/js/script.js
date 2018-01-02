@@ -6,7 +6,8 @@ function login(){
 	    email: form.username.value ,
 	    password: form.password.value
   	};
-    alert('xxx');
+    alert(form);
+    alert(data);
     console.log('xxxx');
   	console.log(data);
 
